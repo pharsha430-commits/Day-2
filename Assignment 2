@@ -1,0 +1,190 @@
+package learning;
+
+import java.util.Scanner;
+
+public class Datatypes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+Scanner sca = new Scanner(System.in);
+System.out.print("Enter your age: ");
+int num  =  sca.nextInt();
+String result = (num % 2 == 0) ? "Even" : "Odd";
+System.out.println("Your age is: " + num + result);
+sca.close();
+
+	}
+
+}
+
+package learning;
+
+import java.util.Scanner;
+
+public class Scanner2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sca = new Scanner(System.in);
+		System.out.println("Enter the radius of the circle");
+		double radius = sca.nextDouble();
+		double area = Math.PI * radius * radius;
+		System.out.println("The area of the circle with radius is" + area);
+		sca.close();
+
+	}
+
+}
+
+package learning;
+
+public class ArithmeticOperators{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1= 35, num2= 48, sum = 0;
+		
+		//calculating addition in Arithmetic Operators
+		sum =num1 + num2;
+		System.out.println("The sum =" + sum);
+		
+
+	}
+
+}
+
+package learning;
+
+public class ArithmeticOperators{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1= 42, num2= 87, sub = 0;
+		
+		//calculating subraction in Arithmetic Operators
+		sub =num1 - num2;
+		System.out.println("The Subraction =" + sub);
+		
+
+	}
+
+}
+
+package learning;
+
+public class ArithmeticOperators{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1= 12, num2= 8, multi = 0;
+		
+		//calculating multiplication in Arithmetic Operators
+		multi =num1 * num2;
+		System.out.println("The Multiplication =" + multi);
+		
+
+	}
+
+}
+
+package learning;
+
+public class ArithmeticOperators{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1= 25, num2= 5, 
+		
+		//calculating division in Arithmetic Operators
+		divi =num1 / num2;
+		System.out.println("The Division =" + divi);
+		
+
+	}
+
+}
+
+Scanner sc = new Scanner(System.in);
+package learning;
+
+import java.util.Scanner;
+
+public class SampleEmployeedata {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Employee Name: Abi");
+		System.out.println("Enter Employee ID: ABC");
+		System.out.println("Enter Emoployee Department: HR");
+		System.out.println("Enter Employee Name: Bhargavi");
+		System.out.println("Enter Emoployee ID:CBF");
+		System.out.println("Enter Emoployee Department: Develper");
+		System.out.println("Enter Emoployee Name: Kumaran");
+		System.out.println("Enter Emoployee ID:YHG");
+		System.out.println("Enter Emoployee Department: Finance");
+		
+		String name = sc.nextLine();
+		String ID = sc.nextLine();
+		String Department = sc.nextLine();
+		
+		
+		System.out.println("\n---Employee Details ---");
+		
+		System.out.println("Name:  " + name);
+		System.out.println("ID:  " + ID );
+		System.out.println("Department:  " + Department);
+		
+		sc.close();
+	}
+
+}
+
+
+Types of variables-
+
+Variables in Java-
+A variable in Java is a name for a memory location used to store data. It must be declared with a data type like int, String, or float. A variable in Java can hold only one type of data, and its value can be changed during the program. You should always initialize the variable before using it. Overall, variable in Java helps in storing, changing, and reusing data throughout the program.
+Types-
+
+1.	Local Variables 
+2.	Instance Variables (Non-static Fields) 
+3.	Static Variables (Class Variables) 
+4.	Parameter Variables
+
+Local Variable-
+A local variable in Java can be declared inside a method, a constructor, or a block, and can be used within the method, constructor, or block.
+Example program
+public static void main (String[] args)
+int var = 68 //Local variable 	
+System.out.println(localVariable);
+
+Instance Variables (Non-static Fields)-
+
+An instance variable in Java is a non-static variable declared inside a class but outside any method, and it is associated with an object. An instance variable is created when an object class is generated.
+
+Example program
+public class Employeedata
+{ 
+String instanceVariable; // instance variable 
+public MyClass(String name) {
+ this.instanceVariable = name;
+}
+}
+static variable
+A static variable in Java belongs to the class itself, not to any specific object. This means all class objects share the same static variable.
+
+class DNT
+{
+public static String student= "Urmi Bose"; //Declared static variable
+
+ public static void main (String[] args) {
+
+ //student variable can be accessed without object creation
+  System.out.println("Student Name is : "+DNT.student);
+ }
+}
+
+
