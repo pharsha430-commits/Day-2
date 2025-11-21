@@ -1,0 +1,134 @@
+package learning;
+
+class Students {
+	
+	String name;
+	String subject;
+	int marks;
+	
+	void display () {
+		System.out.println("Name of the student:" +name);
+		System.out.println("Name of the subject: "+ subject);
+		System.out.println("Marks : "+ marks);
+	}
+	
+	
+}
+
+public class OOPSAssignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Students s1 = new Students();
+		s1.name = "Abi";
+		s1.subject = "English";
+		s1.marks = 89;
+		
+		s1.display();
+		
+	
+		Students s2 = new Students();
+		s2.name = "Basha";
+		s2.subject = "Language";
+		s2.marks = 82;
+		
+		s2.display();
+		
+		Students s3 = new Students();
+		s3.name = "Suraj";
+		s3.subject = "Chemistry";
+		s3.marks = 96;
+		
+		s3.display();
+	}
+}
+
+
+package learning;
+
+public class OOPSAssignment2{ 
+
+	public static void main (String[] args)   {
+		Transport t1 = new Transport  ("Bus", 5638, "Road transport", "Pubic");
+		t1.display();
+		
+		Transport t2 = new Transport ("Train", 82901, "Railway", "Public");
+		t2.display();
+	}
+}
+
+class Transport {
+	
+	String vehicleName;
+	int number;
+	String transportMode;
+	String type;
+
+	Transport (String vehicleName, int number, String transportMode, String type){
+		
+		this.vehicleName = vehicleName;
+		this.number = number;
+		this.transportMode = transportMode;
+		this.type = type;
+		
+	}
+
+
+	void display() {
+		System.out.println("Vehicle Name: " +vehicleName);
+		System.out.println("Vehicle Number: " +number);
+		System.out.println("Mode of transport: " +transportMode);
+		System.out.println("Type of vehicle: "+type);
+		
+	}
+	
+}
+
+
+
+
+package learning;
+
+public class Bank {
+	
+		String accountHolder;
+		int balance;
+		Bank(String accountHolder, int balance)
+		{
+			this.accountHolder = accountHolder;
+			this.balance = balance;
+		}
+		void deposit (int amount) {
+			balance += amount;
+			System.out.println("Deposited: " +amount);
+			System.out.println("Total balance: " + balance);
+		}
+		void withdraw (int amount) {
+			if (amount > balance) {
+				System.out.println("Insufficient balance");
+			} else {
+				balance -= amount;
+				System.out.println("Withdraw: " +amount);
+				System.out.println("Remaining balance: "+ balance);
+			}
+		}
+		
+	public static void main1(String[] args) {
+		// TODO Auto-generated method stub
+		Bank b1 = new Bank ("Nithya", 10000);
+		b1.display();
+		b1.deposit(2000);
+		b1.withdraw(6000);
+		b1.withdraw(2000);
+	}
+
+		void display() {
+			System.out.println("Account holder: " +accountHolder);
+			System.out.println("Current balance: " + balance);
+		}
+}
+
+	
+
+
